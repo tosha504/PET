@@ -1,0 +1,50 @@
+.header {
+    padding: 30px 30px 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $light-orange;
+
+    &__burger {
+        margin-top: 6px;
+        z-index: 3;
+        position: relative;
+        max-width: 35px;
+        width: 100%;
+        display: block;
+
+        span {
+            background-color: $black;
+            height: 3px;
+            width: 35px;
+            position: absolute;
+            transition: 0.4s;
+
+            &:before{
+                background-color: $black;
+                width: 35px;
+            }
+        
+            &:before {
+              position: absolute;
+              top: 8px;
+              content: "";
+              height: 3px;
+              transition: 0.4s;
+
+            }
+        
+            &.active {
+              transform: rotate(-45deg);
+              &:before {
+                transform: rotate(90deg);
+                top: 0;
+              }
+            }
+        }
+
+        @media (min-width: $bp4) {
+            display: none;
+        }
+    }
+    
+}

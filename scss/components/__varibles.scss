@@ -1,0 +1,15 @@
+//Colors
+$black: #000;
+$light-orange: #ef7d00;
+
+//break-points
+$bp1: 575px + 0.98;
+$bp2: 767px + 0.98;
+$bp3: 991px + 0.98;
+$bp4: 1199px + 0.98;
+$bp5: 1439px + 0.98;
+
+@font-face {
+    font-family: 'Raleway';
+    src:  url('Raleway-Black.ttf') format('ttf');
+}
