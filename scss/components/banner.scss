@@ -1,0 +1,29 @@
+.banner {
+    background: linear-gradient(to bottom, #ffcf9a5e 45%, white 0%); 
+    padding-top: 70px;
+    &__title {
+        font-size: 33px;
+    }
+
+    &__descripton {
+        display: none;
+    }
+
+    &__image {
+        position: relative;
+        min-height: 355px;
+        .back, .top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+        }
+
+        .top {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

@@ -6,7 +6,7 @@
   padding: 0;
 }
 html,body {
-  font-family: "Raleway";
+  font-family: $fontFam; 
   font-size: 14px;
   color: #000;
   height: 100%;
@@ -33,12 +33,16 @@ html,body {
 ul {
   list-style: none;
 }
-a,
-a:active,
-a:hover {
+a {
+  color: $black;
   outline: none;
   text-decoration: none;
   transition: 0.3s;
+  @media (min-width:$bp3) {
+    &:hover {
+      color: $light-orange;
+    }
+  }
 }
 button,
 button:active,
