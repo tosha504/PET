@@ -64,3 +64,29 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.title {
+  font-size: 33px;
+  font-weight: normal;
+  position: relative;
+  padding-left: 70px;
+  padding-bottom: 30px;
+  @media (min-width:$bp5) {
+    padding-left: 0px;
+  }
+}
+
+.pre-title {
+  font-size: 16px;
+  color: $light-orange;
+  padding-right: 10px;
+  border-right: 8px solid $light-orange;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  height: 70px;
+  padding-top: 5px;
+  @media (min-width:$bp5) {
+    left: -115px;
+  }
+}

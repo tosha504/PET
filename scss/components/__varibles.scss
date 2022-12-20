@@ -13,3 +13,6 @@ $bp3: 991px + 0.98;
 $bp4: 1199px + 0.98;
 $bp5: 1439px + 0.98;
 
+@mixin fontz($fmx,$fmn){
+    font-size: calc(#{$fmx} + (#{$fmn} * (100vw / 1900)));
+}
