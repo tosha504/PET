@@ -19,6 +19,14 @@
                 margin-right: 40px;
             }
         }
+
+        p {
+            line-height: 150%;
+            padding: 20px 0;
+            @media (min-width:$bp2) {
+                padding:0 0 20px 0;
+            }
+        }
     }
 
     &__title {
@@ -32,6 +40,10 @@
             margin-right: 40px;
             flex: 1 1 30%;
             white-space: nowrap;
+
+            &.secondary {
+                flex: 1 1 100%;
+            }
         }
     }
 
@@ -95,7 +107,7 @@
         background-color: #fef7f0;
         border-radius: 10px;
         padding: 50px 30px;
-        width: 100%;
+        flex: 1 1 100%;
         @media (min-width:$bp4) {
             background-image: url(/assets/images/bakterie2.svg);
             background-position: 40% 100%;
@@ -137,6 +149,7 @@
                     flex: 1 1 33.33333%
                     
                 }
+                
             }
         } 
         
