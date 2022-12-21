@@ -25,10 +25,23 @@ html,body {
 	flex: 1 1 100%;
 }
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
   padding: 0 30px;
+ 
+  @media (min-width:$bp2) {
+    max-width:720px;
+  }
+  @media (min-width:$bp3) {
+    max-width: 960px;
+  }
+  @media (min-width:$bp4) {
+    max-width: 1140px;
+  }
+  @media (min-width:$bp5) {
+    max-width: 71.5vw;
+  }
 }
 ul {
   list-style: none;
@@ -89,4 +102,14 @@ img {
   @media (min-width:$bp5) {
     left: -115px;
   }
+}
+
+.btn {
+  background-color: $light-orange;
+  color: #fff;
+  font-size: 16px;
+  padding: 20px;
+  max-width: 320px;
+  text-align: center;
+  font-weight: normal;
 }
