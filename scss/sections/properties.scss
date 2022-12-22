@@ -106,8 +106,10 @@
         margin: 100px 0;
         background-color: #fef7f0;
         border-radius: 10px;
-        padding: 50px 30px;
+        padding: 70px 30px;
         flex: 1 1 100%;
+        position: relative;
+
         @media (min-width:$bp4) {
             background-image: url(/assets/images/bakterie2.svg);
             background-position: 40% 100%;
@@ -153,5 +155,38 @@
             }
         } 
         
+        &_tooltip{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            transition: 0.3s;
+            &:hover {
+                cursor: pointer;
+                span {
+                    visibility: visible;
+                }
+            }
+            span {
+                visibility: hidden;
+                position: absolute;
+                background-color: #fff;
+                box-shadow: 1px 59px 100px -7px rgba(0, 0, 0, 0.12);
+                color: #232323;
+                line-height: 150%;
+                padding: 40px;
+                border-radius: 10px;
+                font-size: 13px;
+                width: 240px;
+                bottom: 100%;
+                right: 100%;
+
+            }
+
+            
+        }
+     
     }
+
+    
 }
+

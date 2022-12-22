@@ -139,13 +139,13 @@
             }
 
             
-            @media (min-width:$bp3) {
+            // @media (min-width:$bp3) {
                 &:hover {
                     .tooltip {
                         visibility: visible;
                     }
                 }
-            }
+            // }
         }
     }
 }

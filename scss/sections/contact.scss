@@ -1,0 +1,102 @@
+.contact {
+    background: #ffcf9a5e;
+    @media (min-width:$bp3) {
+        padding: 150px 0; 
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        @media (min-width:$bp3) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__image {
+        order: -1;
+        @media (min-width:$bp3) {
+            flex: 1 1 45%;
+        }
+    }
+
+    &__content {
+        @media (min-width:$bp3) {
+            // flex: 1 1 50%;
+            order: -1;
+            margin-right: 50px;
+        }
+        @media (min-width:$bp5) {
+            // margin-right: 0px;
+        }
+    }
+
+    .cards {
+        line-height: 150%;
+        font-size: 16px;
+       
+        @media (min-width:1780px) {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        &__card {
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            margin: 40px 0;
+            max-width: 300px;
+            width: 100%;
+
+            @media (min-width:$bp5) {
+                &:not(:last-child) {
+                    margin-right: 40px;
+                }
+            }
+
+            &_title {
+                font-weight: normal;
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+
+            address {
+                font-style: normal;
+            }
+
+            .item {
+                padding:15px 0; 
+                &:not(:last-child) {
+                    border-bottom: 1px solid #f0f0f0;
+                }
+            }
+        }
+
+        .phone, .mail {
+            display: block;
+            margin-left: 50px;
+            margin-top: 20px;
+            position: relative;
+            padding: 5px 0;
+
+            &::before {
+                position: absolute;
+                left: -50px;
+                top: 50%;
+                transform: translateY(-40%);
+            }
+        }
+
+        .phone {
+            &::before {
+                content: url(/assets/images/telefon.svg);
+            }
+        }
+
+        .mail {
+            &::before {
+                content: url(/assets/images/mail.svg);
+            }
+        }
+    }
+}
