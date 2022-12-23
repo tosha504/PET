@@ -1,7 +1,13 @@
 .footer {
   text-align: center;
   padding: 30px;
+  background-color: #ffcf9a5e;
+  border-top: 1px solid rgba(239, 123, 0, 0.13);
 
-  &__contaier {
+  &__container {
+    @media (min-width:$bp2) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

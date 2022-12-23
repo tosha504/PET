@@ -2,11 +2,11 @@
   padding: 30px 30px 5px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid $light-orange;
-  // position: fixed;
-  // top: 0;
-  // width: 100%;
-  // z-index: 3;
+  border-bottom: 1px solid rgba(239, 123, 0, 0.13);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
   background: #ffcf9a5e;
 
   &__logo {
@@ -37,6 +37,7 @@
           font-size: 20px;
           position: relative;
           left: 40%;
+          
         }
       }
 
@@ -52,6 +53,13 @@
         a {
           font-size: 16px;
         }
+      }
+    }
+
+    &_link {
+      &.active {
+        font-size: 50px;
+        color: red;
       }
     }
   }
@@ -120,6 +128,10 @@
 
         &.active {
           color: $black;
+        }
+
+        &:hover {
+          color: $light-orange;
         }
       }
     }

@@ -121,7 +121,26 @@ img {
     font-size: 14px;
     padding: 15px;
     border-radius: 10px;
-    background-color: #ffcf9a5e;
+    background-color: #fef7f0;
     margin: 20px 0;
+    &:hover {
+      background-color: $light-orange;
+      color: #fef7f0;
+    }
+  }
+
+  &__primary {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 15px;
+    color: #fff;
+    // background-color: $light-orange;
+    margin: 20px 0;
+    box-shadow: 59px 34px 82px 20px rgba(254, 247, 240, 1);
+    &:hover {
+      background-color:#fef7f0;
+      color:  $light-orange;
+    }
   }
 }
