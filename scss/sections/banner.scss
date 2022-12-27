@@ -4,9 +4,7 @@
     @media (min-width:370px) {
         background: linear-gradient(to bottom, #ffcf9a5e 42%, white 0%); 
     }
-    @media (min-width:$bp2) {
-        padding-top: 0;
-    }
+    
     @media (min-width:$bp2) {
         background: linear-gradient(to bottom, #ffcf9a5e 55%, white 0%); 
     }
@@ -33,7 +31,6 @@
             }
             @media (min-width:$bp5) {
                 margin-bottom: 50px;
-                // font-size: 54px;
             }
         }
     
@@ -46,7 +43,6 @@
 
         @media (min-width:$bp2) {
             flex: 1 1 50%;
-            padding-top: 130px;
         }
     }
 

@@ -58,8 +58,17 @@
 
     &_link {
       &.active {
-        font-size: 50px;
-        color: red;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          right: -25px;
+          width: 10px;
+          height: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: $light-orange;
+        }
       }
     }
   }

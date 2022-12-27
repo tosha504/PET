@@ -1,5 +1,8 @@
 .mission {
-    padding-top: 70px;
+    padding: 70px 0 ;
+    @media (min-width:$bp3) {
+        padding: 100px 0 ;
+    }
     line-height: 150%;
 
     &__container {
