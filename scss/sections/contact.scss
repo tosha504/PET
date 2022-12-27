@@ -88,10 +88,11 @@
             padding: 40px;
             border-radius: 10px;
             margin: 40px 0;
-            max-width: 300px;
+         
             width: 100%;
 
-            @media (min-width:$bp2)  { 
+            @media (min-width:$bp2)  {
+                max-width: 330px; 
                 // margin-right: 40px;
                 &:not(:last-child) {
                     margin-right: 40px;
@@ -146,13 +147,13 @@
 
         .phone {
             &::before {
-                content: url(/assets/images/telefon.svg);
+                content: url(../assets/images/telefon.svg);
             }
         }
 
         .mail {
             &::before {
-                content: url(/assets/images/mail.svg);
+                content: url(../assets/images/mail.svg);
             }
         }
     }

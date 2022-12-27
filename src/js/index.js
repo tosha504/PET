@@ -21,7 +21,7 @@ $(document).ready(function () {
   function opt() {
     if ($(window).width() > 1400) {
       options = {
-        threshold: 0.9
+        threshold: 0.92
       };
     }
     if ($(window).width() < 1400) {

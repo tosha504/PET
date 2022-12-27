@@ -94,7 +94,7 @@
                 left: 10px;
 
                 &::before {
-                    content: url(/assets/images/plusik.svg);
+                    content: url(../assets/images/plusik.svg);
                     left: -10px;
                     position: relative;
                 }
@@ -111,7 +111,7 @@
         position: relative;
 
         @media (min-width:$bp4) {
-            background-image: url(/assets/images/bakterie2.svg);
+            background-image: url(../assets/images/bakterie2.svg);
             background-position: 40% 100%;
             background-repeat: no-repeat;
             background-size: contain;

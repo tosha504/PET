@@ -1,7 +1,9 @@
 .about {
     background-color: #fef7f0;
     padding: 70px 0;
-    margin-top: 100px;
+    @media (min-width:$bp3) {
+        margin-top: 100px;
+    }
 
     &__container {
         @media (min-width:$bp4) {
