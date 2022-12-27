@@ -1,0 +1,21 @@
+.contact-page {    
+    &__container {
+        padding-top: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__image {
+        display: none;
+        @media (min-width:$bp3) {
+            display: block;
+        }
+    }
+}
+
+.main-cp {
+    @media (min-width:$bp3) {
+        background: linear-gradient(to right, #ffcf9a5e 42%, white 0%);
+    }
+}
