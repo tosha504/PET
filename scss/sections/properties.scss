@@ -112,9 +112,9 @@
 
         @media (min-width:$bp4) {
             background-image: url(../assets/images/bakterie2.svg);
-            background-position: 40% 100%;
+            background-position: -100% 0%;
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
         }
 
         @media (min-width:$bp5) {

@@ -41,6 +41,7 @@ $(document).ready(function () {
   });
   var arr = [mission, about, contact];
   var callback = function callback(entries, observer) {
+    alert('sdfsd');
     entries.forEach(function (entry) {
       var isIntersecting = entry.isIntersecting,
         intersectionRatio = entry.intersectionRatio;
@@ -54,7 +55,9 @@ $(document).ready(function () {
   };
   var observer = new IntersectionObserver(callback, options);
   arr.forEach(function (e) {
-    observer.observe(e);
+    if (e !== null) {
+      observer.observe(e);
+    }
   });
 
   //check to see if the submited cookie is set, if not check if the popup has been closed, if not then display the popup
@@ -86,4 +89,11 @@ $(document).ready(function () {
     var expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
   }
+  console.log($('.inp-req'));
+  $('form').on('submit', function (e) {
+    if ($('input[data-required="required"]').val() < 1) {
+      $(".inp-req").html("to pole jest wymagane");
+      e.preventDefault();
+    }
+  });
 });
