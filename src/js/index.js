@@ -41,7 +41,6 @@ $(document).ready(function () {
   });
   var arr = [mission, about, contact];
   var callback = function callback(entries, observer) {
-    alert('sdfsd');
     entries.forEach(function (entry) {
       var isIntersecting = entry.isIntersecting,
         intersectionRatio = entry.intersectionRatio;

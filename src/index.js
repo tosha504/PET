@@ -50,7 +50,7 @@ const header = $('header'),
   let arr = [mission, about, contact]
 
   const callback = function (entries, observer) {
-    alert('sdfsd')
+   
     entries.forEach( entry => {
       const { isIntersecting, intersectionRatio} = entry;
       if(isIntersecting ) {
